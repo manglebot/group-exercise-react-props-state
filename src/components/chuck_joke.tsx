@@ -3,6 +3,6 @@ interface ChuckJokeProps {
     joke: string;
 }
 
-const ChuckJoke: React.FC<ChuckJokeProps> = ({id, joke}) => <p>{id}: {joke}</p>
+const ChuckJoke: React.FC<ChuckJokeProps> = ({id, joke}) => <ul><li className="joke"><strong>{id}:</strong> {joke}</li></ul>
 
 export default ChuckJoke;

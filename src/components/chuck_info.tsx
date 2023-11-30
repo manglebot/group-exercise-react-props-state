@@ -3,7 +3,7 @@ interface chuckInfoProp {
 	roundHouseKicks : number;
 }
 
-const ChuckInfo:React.FC<chuckInfoProp> = ({whalesSaved, roundHouseKicks}) => {
+const ChuckInfo: React.FC<chuckInfoProp> = ({whalesSaved, roundHouseKicks}) => {
 
 	return (
 		<>
@@ -12,6 +12,5 @@ const ChuckInfo:React.FC<chuckInfoProp> = ({whalesSaved, roundHouseKicks}) => {
 			<p>Number of Round House Kicks (in the last day):  { roundHouseKicks }</p>
 		</>);
 }
-
 
 export default ChuckInfo;

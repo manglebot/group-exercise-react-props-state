@@ -10,7 +10,7 @@ const ChuckCard: React.FC<ChuckCardProps> = ({chuckGreeting}) => {
 
 		<>
 			{}
-			<h2> {chuckGreeting }</h2>
+			<h2> { chuckGreeting }</h2>
 
 			<img className='img__small' src={ChuckImage} alt='A handsome man' />
 		</>

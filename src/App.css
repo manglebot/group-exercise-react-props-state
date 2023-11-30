@@ -13,3 +13,9 @@ body {
 .img__small {
   width: 200px;
 }
+
+ul {
+  text-align: left;
+  margin: 0 120px 40px;
+  list-style-type: none;
+}
