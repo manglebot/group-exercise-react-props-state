@@ -35,14 +35,14 @@ function App() {
 			<ChuckCard chuckGreeting={chuckGreeting}/>
 
 			<h2>Chuck Info: </h2>
-			{/* <ChuckInfo whalesSaved={whalesSaved} roundHouseKicks={roundHouseKicks} /> */}
+			<ChuckInfo whalesSaved={whalesSaved} roundHouseKicks={roundHouseKicks} />
 
-			<h2>Jokes: </h2>
-			
-			{}
-			
-
-
+			<h2>Jokes: </h2> 
+			{
+				jokes.map((joke) => {
+					return <ChuckJokes key={joke.id} id={joke.id} joke={joke.joke} />
+				})
+			}
 		</div>
 	);
 }
