@@ -8,3 +8,8 @@ body {
 .App {
   text-align: center;
 }
+
+/* Chuck is too big for his own good */
+.img__small {
+  width: 200px;
+}
