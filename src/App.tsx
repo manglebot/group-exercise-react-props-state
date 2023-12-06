@@ -5,7 +5,7 @@ import ChuckInfo from "./components/chuck_info";
 import ChuckJokes from "./components/chuck_joke";
 import jokes from "./data/jokes.json";
 
-import Joke from "./joke";
+// import Joke from "./joke";
 
 function App() {
   const [chuckGreeting, setChuckGreeting] = useState<string>(
