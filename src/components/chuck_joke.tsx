@@ -1,7 +1,25 @@
 import React from "react";
 import jokes from "../data/jokes.json";
 
-const ChuckJoke: React.FC = () => {
+interface ChuckJokeProp {
+  filtered?: boolean;
+}
+
+const filteredJoke = jokes[2];
+
+const ChuckJoke: React.FC<ChuckJokeProp> = ({ filtered }) => {
+  if (filtered === true) {
+    return (
+      <div>
+        <ul>
+          <li className="joke" key={jokes[2].id}>
+            <strong>{jokes[2].id}</strong> {jokes[2].joke}
+          </li>
+        </ul>
+      </div>
+    );
+  }
+
   return (
     <div>
       <ul>

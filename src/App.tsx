@@ -17,6 +17,9 @@ function App() {
 
       <h2>Jokes: </h2>
       <ChuckJokes />
+
+      <h2>Filtered Jokes: </h2>
+      <ChuckJokes filtered />
     </div>
   );
 }
