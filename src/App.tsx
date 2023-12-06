@@ -1,9 +1,10 @@
+import React from "react";
+
 import "./App.css";
 import { useState } from "react";
 import ChuckCard from "./components/chuck_card";
 import ChuckInfo from "./components/chuck_info";
 import ChuckJokes from "./components/chuck_joke";
-import jokes from "./data/jokes.json";
 
 // import Joke from "./joke";
 
@@ -23,9 +24,7 @@ function App() {
       <ChuckInfo whalesSaved={whalesSaved} roundHouseKicks={roundHouseKicks} />
 
       <h2>Jokes: </h2>
-      {jokes.map((joke) => {
-        return <ChuckJokes key={joke.id} id={joke.id} joke={joke.joke} />;
-      })}
+      <ChuckJokes />
     </div>
   );
 }
