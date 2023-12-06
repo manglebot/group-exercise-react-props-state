@@ -5,15 +5,14 @@ interface ChuckJokeProp {
   filtered?: boolean;
 }
 
-const filteredJoke = jokes[2];
-
 const ChuckJoke: React.FC<ChuckJokeProp> = ({ filtered }) => {
   if (filtered === true) {
+    const { id, joke } = jokes[2];
     return (
       <div>
         <ul>
-          <li className="joke" key={jokes[2].id}>
-            <strong>{jokes[2].id}</strong> {jokes[2].joke}
+          <li className="joke" key={id}>
+            <strong>{id}</strong> {joke}
           </li>
         </ul>
       </div>
